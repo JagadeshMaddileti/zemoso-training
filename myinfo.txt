@@ -1,4 +1,4 @@
 hello
-this is Developer2
-from Hyderabad
+this is Developer
+from Banglore
 
