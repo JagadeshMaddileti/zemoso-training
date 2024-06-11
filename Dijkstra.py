@@ -37,13 +37,13 @@ def shortest_path(graph, source, destination):
     return path, dist[destination]
 
 graph = {
-    'A': {'B': 1,'C':3},
-    'B': {'A': 1, 'C': 2},
-    'C': {'A':3,'B': 2},
-    #'D': {'B': 6, 'C': 3}
+     'A': {'B': 1, 'C': 4},
+    'B': {'A': 1, 'C': 2, 'D': 6},
+    'C': {'A': 4, 'B': 2, 'D': 3},
+    'D': {'B': 6, 'C': 3}
 }
 source = 'A'
-destination = 'C'
+destination = 'D'
 path, cost = shortest_path(graph, source, destination)
 
 print(f"The shortest path from {source} to {destination} is {path} with a cost of {cost}")
