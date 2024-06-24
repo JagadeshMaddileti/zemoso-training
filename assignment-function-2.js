@@ -1,2 +1,2 @@
-const x=(firstName,lastName) => firstName.at(0)+lastName.at(0);  //arrow function
-console.log(x("Roger","Waters"));
+const concatFirstIndex=(firstName,lastName) => firstName.at(0)+lastName.at(0);  //arrow function
+console.log(concatFirstIndex("Roger","Waters"));git
