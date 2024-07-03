@@ -1,0 +1,36 @@
+<!-- Create a simple application which displays two counts:Local Score, Session Score and a button to increment these counts. 
+Local score must persist in Local Storage and Session score must persist in Session Storage and must reset on closing the session. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Counter</title>
+  </head>
+  <body>
+    <div>
+      <h2>Local Score: <span id="local-score">0</span></h2>
+      <h2>Session Score: <span id="session-score">0</span></h2>
+      <button id="increment-btn">Increment</button>
+    </div>
+    <script>
+      let localScore = localStorage.getItem("localScore") || 0;
+      let sessionScore = sessionStorage.getItem("sessionScore") || 0;
+
+      document.getElementById("local-score").innerText = localScore;
+      document.getElementById("session-score").innerText = sessionScore;
+
+      document.getElementById("increment-btn").addEventListener("click", function () {
+          localScore++;
+          sessionScore++;
+
+          document.getElementById("local-score").innerText = localScore;
+          document.getElementById("session-score").innerText = sessionScore;
+
+          localStorage.setItem("localScore", localScore);
+          sessionStorage.setItem("sessionScore", sessionScore);
+        });
+    </script>
+  </body>
+</html>
