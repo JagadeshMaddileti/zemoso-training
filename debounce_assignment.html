@@ -1,0 +1,59 @@
+<!-- Assignment: Create a search bar that performs search requests with debouncing and throttling to improve user experience.
+(We don't need to concentrate on UI &Styling for this assignment) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar with Debouncing and Throttling</title>
+</head>
+<body>
+    <input type="text" id="search-input" placeholder="Search...">
+    <div id="results"></div>
+    <script>
+     // Debounce function
+    function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+            const context = this;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+    }
+
+    // Throttle function
+    function throttle(func, limit) {
+        let lastFunc;
+        let lastRan;
+        return function (...args) {
+            const context = this;
+            if (!lastRan) {
+                func.apply(context, args);
+                lastRan = Date.now();
+            } else {
+                clearTimeout(lastFunc);
+                lastFunc = setTimeout(function () {
+                    if ((Date.now() - lastRan) >= limit) {
+                        func.apply(context, args);
+                        lastRan = Date.now();
+                    }
+                }, limit - (Date.now() - lastRan));
+            }
+        };
+    }
+    function search(query) {
+        console.log(`Searching for: ${query}`);
+        document.getElementById('results').innerText = `Results for "${query}"`;
+    }
+
+    // Debounced and throttled search
+    const debouncedSearch = debounce(search, 300);
+    const throttledSearch = throttle(debouncedSearch, 1000);
+
+    document.getElementById('search-input').addEventListener('input', function (event) {
+        throttledSearch(event.target.value);
+    });
+    </script>
+</body>
+</html>
