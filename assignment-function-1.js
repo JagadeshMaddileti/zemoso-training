@@ -1,4 +1,4 @@
-function number(n,evenCall,oddCall){
+const number=(n,evenCall,oddCall)=>{
     if(n%2==0){
         evenCall(n);
     }
@@ -6,10 +6,10 @@ function number(n,evenCall,oddCall){
         oddCall(n);
     }
 }
-function even(n){
+const even=(n)=>{
     console.log(`${n} is even`);
 }
-function odd(n){
+const odd=(n)=>{
     console.log(`${n} is odd`);
 }
 number(4,even,odd);
