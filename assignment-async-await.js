@@ -19,7 +19,7 @@
   
 // How do you solve this problem. How can we wait for till the function execution is completed, so that we can have correct email at line 10
 
-function getData(uId) {
+const getData=(uId)=> {
     return new Promise((resolve)=>{
     setTimeout(() => {
     console.log("Fetched the data!");
@@ -27,7 +27,7 @@ function getData(uId) {
     }, 4000)
   })
     }
-async function data(){
+const data=async ()=>{
     console.log("start");
     var email =await getData("skc");
     console.log("Email id of the user id is: " + email);
