@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zemosolabs</title>
+    <link rel="stylesheet" href="restaurant-style.css">
+    <script src="restaurant.js" defer></script>
+</head>
+<body>
+    <h1>Restuarant Application</h1>
+    <div class="container">
+        <div class="table-items">
+            <div>
+             <div class="content-table">
+             <h2>Tables</h2>
+             <input id="search-table" type="search" placeholder="Search table">
+             </div>
+             <div class="list">
+                 <div class="id" data-table="1">
+                     <div class="tname">Table-1</div>
+                     <div class="titems">Rs.0 | Total items:0</div>
+                 </div>
+                 <div class="id" data-table="2">
+                     <div class="tname">Table-2</div>
+                     <div class="titems">Rs.0 | Total items:0</div>
+                 </div>
+                 <div class="id" data-table="3">
+                     <div class="tname">Table-3</div>
+                     <div class="titems">Rs.0 | Total items:0</div>
+                 </div>
+                 <div class="id" data-table="4">
+                     <div class="tname">Table-4</div>
+                     <div class="titems">Rs.0 | Total items:0</div>
+                 </div>
+             </div>
+            </div>
+         </div>
+         <div class="menu-items">
+             <div class="content-menu">
+                 <h2>Menu</h2>
+                 <input id="search-menu" data-search type="search" placeholder="Search menu... by course, by food">
+             </div>
+             <div class="menu-cards" data-menu-cards-container></div>
+             <template data-menu-template>
+                 <div class="item" draggable="true">
+                     <div class="name" data-name></div>
+                     <div class="course" data-course></div>
+                     <div class="cost" data-cost></div>
+                 </div>
+             </template>
+         </div>
+    </div>
+    <div id="tableModal" class="modal">
+        <div id="table-head">
+            <div>Table-0 | Order Details</div>
+            <div class="close">&times;</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Number of Servings</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="orderDetailsBody">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" id="total">Total:</td>
+                    <td id="totalAmount"></td>
+                    <td colspan="2">
+                        <button id="generateBill">Generate Bill</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

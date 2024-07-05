@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+}
+.table-items{
+    background-color:transparent;
+    height: 100vh;
+    width: 20vw;
+}
+.menu-items{
+    height: 100vh;
+    width: 80vw;
+}
+.content-table h2{
+    margin:10px 20px 10px 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+.content-table input{
+    margin:10px 20px 10px 20px;
+}
+.list{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+.id{
+  background-color: white;
+  margin:10px 20px 10px 20px;
+  text-align: center;
+  border-radius: .5rem;
+  border: 1px solid black;
+  padding:10px 20px 10px 20px;
+  box-shadow: 2px 2px rgb(191, 190, 190);
+}
+
+.menu-cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(50vw,1fr));
+}
+.menu-cards .item{
+    background-color: white;
+    margin:10px 20px 10px 20px;
+    border-radius: .5rem;
+    padding:10px 20px 10px 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgb(191, 190, 190);
+}
+.content-menu h2{
+    margin:10px 20px 10px 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+.content-menu input{
+    margin:10px 20px 10px 20px;
+    width:20rem;
+}
+.item > .name{
+    font-size: 1.5rem;
+    margin-bottom:.25rem;
+}
+.item > .cost{
+    font-size:.8rem;
+}
+.hide{
+    display: none;
+}
+.modal{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    transition:200ms ease-in-out;
+    border:1px solid black;
+    z-index:10;
+    background-color: white;
+    width:35rem;
+}
+.modal.active{
+    transform:translate(-50%,-50%) scale(1);
+}
+#table-head{
+    display:flex;
+    justify-content: space-between;
+    padding:10px 20px 10px 20px;
+    background-color: royalblue;
+    color:aliceblue;
+}
+th{
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+}
+.close{
+    font-size:1.25rem;
+    cursor: pointer;
+}
+tbody td{
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+tfoot td {
+    font-weight: bold;
+    text-align: right;
+}
+
+#generateBill {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+    .menu-cards {
+      justify-content: center;
+      align-items: center;
+    }
+  }
