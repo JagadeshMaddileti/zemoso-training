@@ -6,18 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form id="myForm">
         <input type="email" id="email" placeholder="email">
         <input type="text" id="username" placeholder="username">
         <input type="password" id="password" placeholder="password">
+        <button type="button" onclick="displayValues()">Submit</button>
     </form>
+    
+    <div id="displayArea">
+    </div>
+
     <script>
-        let x=document.getElementById("email").value;
-        let y=document.getElementById("username").value;
-        let z=document.getElementById("password").value;
-        console.log(x);
-        console.log(y);
-        console.log(z);
+        function displayValues() {
+            let emailValue = document.getElementById("email").value;
+            let usernameValue = document.getElementById("username").value;
+            let passwordValue = document.getElementById("password").value;
+
+            let displayContent = `
+                <h3>Entered Details</h3>
+                <p>Email: ${emailValue}</p>
+                <p>Username: ${usernameValue}</p>
+                <p>Password: ${passwordValue}</p>
+            `;
+            document.getElementById("displayArea").innerHTML = displayContent;
+        }
     </script>
 </body>
 </html>

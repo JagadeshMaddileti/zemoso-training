@@ -1,11 +1,5 @@
-function maxElement(ar){
-    max=ar[0]
-    for(let i of ar){
-        if(max<i){
-            max=i
-        }
-    }
-    return max;
+const maxElement=(ar)=>{
+    return Math.max(...ar);
 }
 const ar=[56,26,37,86,39]
 console.log(maxElement(ar));
