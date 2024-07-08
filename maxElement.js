@@ -1,5 +1,5 @@
-const maxElement=(ar)=>{
+const findMaxElement=(ar)=>{
     return Math.max(...ar);
 }
 const ar=[56,26,37,86,39]
-console.log(maxElement(ar));
+console.log(findMaxElement(ar));
