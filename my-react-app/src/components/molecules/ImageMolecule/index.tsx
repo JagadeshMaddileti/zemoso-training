@@ -1,15 +1,15 @@
 import { Stack } from "@mui/material";
-import CustomImage from "../../atoms/CustomImage";
+import Image from "../../atoms/Image";
 
 
-const ImageMolecule=()=>{
+const Images=()=>{
     return(
         <Stack direction='row' spacing={2}>
-            <CustomImage src="./assets/bike.svg" alt="bike"/>
-            <CustomImage src="./assets/bus.svg" alt="bus"/>
-            <CustomImage src="./assets/car.svg" alt="car"/>
-            <CustomImage src="./assets/train.svg" alt="train"/>
+            <Image src="./assets/icons/bike.svg" alt="bike"/>
+            <Image src="./assets/icons/bus.svg" alt="bus"/>
+            <Image src="./assets/icons/car.svg" alt="car"/>
+            <Image src="./assets/icons/train.svg" alt="train"/>
         </Stack>
     );
 }
-export default ImageMolecule;
+export default Images;

@@ -19,12 +19,12 @@
     line-height: 16px;
     padding-left: 8px;
 }
-.stack1{
+.stack-content{
     gap:150px;
 }
-.stack2{
+.text-image-stack{
     gap:40px;
 }
-.stack3{
+.text-icon-stack{
     gap:100px;
 }

@@ -1,8 +1,8 @@
 import { Stack } from "@mui/material";
-import CustomTypography from "../../atoms/CustomTypography";
+import CustomTypography from "../../atoms/Typography";
 import "./index.css";
 
-const TextMolecule=()=>{
+const Texts=()=>{
     return(
         <Stack direction="column">
             <CustomTypography variant="h5" label ="User Experience Designer"/>
@@ -11,4 +11,4 @@ const TextMolecule=()=>{
         </Stack>
     );
 }
-export default TextMolecule;
+export default Texts;
