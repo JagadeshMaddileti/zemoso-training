@@ -1,0 +1,30 @@
+.card{
+     height:140px;
+     width:560px;
+     padding:16px 19px 16px 19px;
+     gap:10px;
+     border:2px solid #77EDDF;
+     border-radius:12px;
+}
+.more{
+    height:24px;
+    width:24px;
+    gap:5px;
+    padding-left: 50px;
+}
+.time{
+    font-weight: 700;
+    font-size: 12x;
+    color:#656E66;
+    line-height: 16px;
+    padding-left: 8px;
+}
+.stack1{
+    gap:150px;
+}
+.stack2{
+    gap:40px;
+}
+.stack3{
+    gap:100px;
+}
