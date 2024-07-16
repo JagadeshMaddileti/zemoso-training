@@ -2,7 +2,7 @@ import { Stack } from "@mui/material";
 import Typography from "../../atoms/Typography";
 import "./index.css";
 
-const Texts=()=>{
+const Description=()=>{
     return(
         <Stack direction="column">
             <Typography variant="h5" label ="User Experience Designer"/>
@@ -11,4 +11,4 @@ const Texts=()=>{
         </Stack>
     );
 }
-export default Texts;
+export default Description;

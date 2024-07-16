@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import {ThemeProvider} from "@mui/material";
-import Texts from "../molecules/TextMolecule";
-import Images from "../molecules/ImageMolecule";
+import Description from "../molecules/Description";
+import AvailableRoutes from "../molecules/AvailableRoutes";
 import Typography from "../atoms/Typography";
 import Image from "../atoms/Image";
 import theme from "../../Theme";
@@ -13,8 +13,8 @@ const MyntraCard=()=>{
             <Stack><Image src="./assets/icons/myntra.svg" alt="myntra"/></Stack>
             <Stack direction="row" className="stack-content">
                 <Stack direction="column" className="text-image-stack">
-                <Texts/>
-                <Images/>
+                <Description/>
+                <AvailableRoutes/>
                 </Stack>
                 <Stack direction="column" className="text-icon-stack">
                 <Image src="./assets/icons/more.svg" alt="more" className="more"/>

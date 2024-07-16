@@ -2,7 +2,7 @@ import { Stack } from "@mui/material";
 import Image from "../../atoms/Image";
 
 
-const Images=()=>{
+const AvailableRoutes=()=>{
     return(
         <Stack direction='row' spacing={2}>
             <Image src="./assets/icons/bike.svg" alt="bike"/>
@@ -12,4 +12,4 @@ const Images=()=>{
         </Stack>
     );
 }
-export default Images;
+export default AvailableRoutes;
