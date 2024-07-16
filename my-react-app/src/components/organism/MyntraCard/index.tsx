@@ -1,10 +1,10 @@
 import { Stack } from "@mui/material";
 import {ThemeProvider} from "@mui/material";
-import Description from "../molecules/Description";
-import AvailableRoutes from "../molecules/AvailableRoutes";
-import Typography from "../atoms/Typography";
-import Image from "../atoms/Image";
-import theme from "../../Theme";
+import Description from "../../molecules/Description";
+import AvailableRoutes from "../../molecules/AvailableRoutes";
+import Typography from "../../atoms/Typography";
+import Image from "../../atoms/Image";
+import theme from "../../../Theme";
 import "./index.css";
 const MyntraCard=()=>{
    return(

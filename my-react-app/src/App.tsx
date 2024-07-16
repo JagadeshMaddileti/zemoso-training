@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import MyntraCard from './components/organism';
+import MyntraCard from './components/organism/MyntraCard';
 
 function App() {
   return (
