@@ -12,7 +12,7 @@ jobs:
    runs-on: ubuntu-latest
    defaults:
      run:
-       working-directory: ./green-commute
+       working-directory: ./zemoso-training
    steps:
      - uses: actions/checkout@v2
        with:
@@ -23,7 +23,7 @@ jobs:
        run: npm test src/
      - name: SonarCloud Scan
        with:
-         projectBaseDir: ./green-commute
+         projectBaseDir: ./zemoso-training
        uses: SonarSource/sonarcloud-github-action@master
        env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
@@ -34,7 +34,7 @@ jobs:
    runs-on: ubuntu-latest
    defaults:
      run:
-       working-directory: ./green-commute
+       working-directory: ./zemoso-training
    steps:
      - uses: actions/checkout@v2
        with:
@@ -45,7 +45,7 @@ jobs:
        run: npm test src/
      - name: SonarCloud Scan
        with:
-         projectBaseDir: ./green-commute
+         projectBaseDir: ./zemosp-training
          args: >
            -Dsonar.branch.name=main
        uses: SonarSource/sonarcloud-github-action@master
