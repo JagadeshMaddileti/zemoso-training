@@ -29,7 +29,7 @@ function getData(uId) {
     }
 async function data(){
     console.log("start");
-    var email =await getData("skc");
+    let email =await getData("skc");
     console.log("Email id of the user id is: " + email);
     console.log("end");
 }
