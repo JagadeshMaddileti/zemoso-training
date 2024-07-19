@@ -1,10 +1,15 @@
-const employeeData=[{employee: "user1" , status:"active"},{employee:"user2" ,status:"inactive"}]
-const groupedData={}
-for(const item of employeeData ){
-    const status=item.status;
-    if(!groupedData[status]){
-        groupedData[status]=[]
+const employeeData = [
+    { employee: "user1", status: "active" },
+    { employee: "user2", status: "inactive" },
+  ];
+  
+const groupedData = employeeData.reduce((acc, item) => {
+    const { status } = item;
+    if (!acc[status]) {
+        acc[status] = [];
     }
-    groupedData[status].push(item)
-}
-console.log(groupedData)
+    acc[status].push(item);
+    return acc;
+}, {});
+
+console.log(groupedData);
