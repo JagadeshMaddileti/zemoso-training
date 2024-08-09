@@ -1,0 +1,22 @@
+[
+        {"name": "Biryani", "course_type": "Main Course", "cost": 200.00},
+        {"name": "Samosa", "course_type": "Appetizers", "cost": 20.00},
+        {"name": "Chocolate Cake", "course_type": "Desserts", "cost": 150.00},
+        {"name": "Lemonade", "course_type": "Beverages", "cost": 50.00},
+        {"name": "Grilled Chicken", "course_type": "Main Course", "cost": 140.50},
+        {"name": "Spring Rolls", "course_type": "Appetizers", "cost": 120.25},
+        {"name": "Paneer Butter Masala", "course_type": "Main Course", "cost": 299.99},
+        {"name": "Panner tikka", "course_type": "Appetizers", "cost": 200.00},
+        {"name": "Ice cream", "course_type": "Desserts", "cost": 50.00},
+        {"name": "Iced Tea", "course_type": "Beverages", "cost": 120.50},
+        {"name": "Tandoori Chicken", "course_type": "Main Course", "cost": 250.00},
+        {"name": "Mozzarella Sticks", "course_type": "Appetizers", "cost": 160.25},
+        {"name": "Cheesecake", "course_type": "Desserts", "cost": 150.00},
+        {"name": "Coffee", "course_type": "Beverages", "cost": 60.50},
+        {"name": "Fish and Chips", "course_type": "Main Course", "cost": 230.50},
+        {"name": "Gobi Manchurian", "course_type": "Appetizers", "cost": 60.00},
+        {"name": "Gulab Jamun", "course_type": "Desserts", "cost": 120.00},
+        {"name": "Smoothie", "course_type": "Beverages", "cost": 130.25},
+        {"name": "Pizza Margherita", "course_type": "Main Course", "cost": 200.99},
+        {"name": "Chicken Wings", "course_type": "Appetizers", "cost": 120.75}
+]
